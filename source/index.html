@@ -18,7 +18,7 @@
     <div class="header-promo">
       <div class="header-promo__wrapper">
         <div class="header-promo__content promo-content">
-          <h2 class="heading-h2 promo-content__title">Функциональное питание для котов</h2>
+          <h2 class="heading heading-h2 promo-content__title">Функциональное питание для котов</h2>
           <p class="promo-content__subtitle">Занялся собой? Займись котом!</p>
           <button class="button button-primary promo-content__button" type="button">Подобрать программу</button>
         </div>
@@ -51,14 +51,16 @@
           <div class="header__nav-wrapper">
             <ul class="list header__nav-list header-menu">
               <li class="header-menu__item header-menu__item-current">
-                <a class="header-menu__link" href="index.html">Главная</a>
+                <a class="link header-menu__link" href="index.html">Главная</a>
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="catalog.html">Каталог продукции</a>
+                <a class="link header-menu__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="header-menu__item">
+                <button class="button header-menu__link" type="button">Подбор программы</button>
               </li>
             </ul>
           </div>
-          <button class="button header__nav-button" type="button">Подбор программы</button>
         </nav>
       </div>
     </div>
@@ -68,31 +70,31 @@
       <h1 class="visually-hidden">Кэт энерджи</h1>
       <div class="program-section__wrapper">
         <div class="program-section__item program-section__item-slim">
-          <div class="program-section__text">
-            <h3 class="heading-h3 program-section__title">Похудение</h3>
+          <div class="program-section__head">
+            <h3 class="heading heading-h3 program-section__title">Похудение</h3>
           </div>
           <p class="program-section__description">
             Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.
           </p>
-          <a class="program-section__link" href="#">Каталог Slim</a>
+          <a class="link program-section__link" href="#">Каталог Slim</a>
         </div>
         <div class="program-section__item program-section__item-pro">
-          <div class="program-section__text">
-            <h3 class="heading-h3 program-section__title">Набор массы</h3>
+          <div class="program-section__head">
+            <h3 class="heading heading-h3 program-section__title">Набор массы</h3>
           </div>
           <p class="program-section__description">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!
           </p>
-          <a class="program-section__link" href="#">Каталог Pro</a>
+          <a class="link program-section__link" href="#">Каталог Pro</a>
         </div>
       </div>
     </section>
     <section class="stages-section">
-      <h2 class="heading-h2 stages-section__title">Как это работает</h2>
+      <h2 class="heading heading-h2 stages-section__title">Как это работает</h2>
       <ul class="list stages-section__list">
         <li class="stages-section__item stages-section__item-healthy">
           <p class="stages-section__description">
@@ -125,7 +127,7 @@
       </ul>
     </section>
     <section class="sample-section">
-      <h2 class="heading-h2 sample-section__title">Живой пример</h2>
+      <h2 class="heading heading-h2 sample-section__title">Живой пример</h2>
       <div class="sample-section__wrapper">
         <div class="sample-section__content sample-content">
           <p class="sample-content__description">
@@ -137,11 +139,11 @@
           <div class="sample-content__info sample-info">
             <div class="sample-info__wrapper">
               <div class="sample-info__item">
-                5 кг
+                <span class="sample-info__progress">5 кг</span>
                 <span class="sample-info__caption">Снижение веса</span>
               </div>
               <div class="sample-info__item">
-                60 дней
+                <span class="sample-info__progress">60 дней</span>
                 <span class="sample-info__caption">Затрачено времени</span>
               </div>
               <div class="sample-info__item sample-total">
@@ -177,13 +179,19 @@
       <div class="footer__social social">
         <ul class="list social__list">
           <li class="social__item">
-            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">Наша группа в Вконтакте</a>
+            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer" title="Наша группа в Вконтакте">
+              <span class="visually-hidden">Наша группа в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-youtube" href="https://www.youtube.com/@HTMLAcademyTV" target="_blank" rel="noopener noreferrer">Наш канал на YouTube</a>
+            <a class="social__link social__link-youtube" href="https://www.youtube.com/@HTMLAcademyTV" target="_blank" rel="noopener noreferrer" title="Наш канал на YouTube">
+              <span class="visually-hidden">Наш канал на YouTube</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-telegram" href="https://htmlacademy.t.me" target="_blank" rel="noopener noreferrer">Наш канал в Telegram</a>
+            <a class="social__link social__link-telegram" href="https://htmlacademy.t.me" target="_blank" rel="noopener noreferrer" title="Наш канал в Telegram">
+              <span class="visually-hidden">Наш канал в Telegram</span>
+            </a>
           </li>
         </ul>
       </div>

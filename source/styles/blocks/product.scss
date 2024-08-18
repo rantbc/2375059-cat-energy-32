@@ -1,3 +1,28 @@
-.product-preview__content {
-  background-color: cyan;
+.product-preview {
+  &__content {
+    background-image: linear-gradient(to bottom, #ffffff 81px, $gray-lighter 0);
+
+    @media (min-width: 768px) {
+      background-image: linear-gradient(to bottom, #ffffff 81px, $gray-lighter 0);
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: $heading-font;
+    color: #222222;
+  }
+
+  &__caption {
+    line-height: 18px;
+    color: $gray-dark;
+  }
+}
+
+.product-properties {
+  &__name,
+  &__value {
+    line-height: 24px;
+    color: $gray-dark;
+  }
 }

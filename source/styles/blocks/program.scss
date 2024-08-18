@@ -1,0 +1,18 @@
+.program-section {
+  &__item {
+    background-color: $gray-lighter;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+  }
+}

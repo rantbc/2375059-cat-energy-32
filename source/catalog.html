@@ -35,20 +35,22 @@
         <div class="header__nav-wrapper">
           <ul class="list header__nav-list header-menu">
             <li class="header-menu__item">
-              <a class="header-menu__link" href="index.html">Главная</a>
+              <a class="link header-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="header-menu__item  header-menu__item-current">
+              <a class="link header-menu__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link header-menu__item-current" href="catalog.html">Каталог продукции</a>
+              <button class="button header-menu__link" type="button">Подбор программы</button>
             </li>
           </ul>
         </div>
-        <button class="button header__nav-button" type="button">Подбор программы</button>
       </nav>
     </div>
   </header>
   <main class="main-content">
     <section class="catalog">
-      <h1 class="catalog__heading heading-h2">Каталог продукции</h1>
+      <h1 class="heading heading-h2 catalog__heading">Каталог продукции</h1>
       <div class="catalog__wrapper">
         <ul class="list catalog__list product-list">
           <!-- product 1 -->
@@ -386,13 +388,19 @@
       <div class="footer__social social">
         <ul class="list social__list">
           <li class="social__item">
-            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">Наша группа в Вконтакте</a>
+            <a class="social__link social__link-vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer" title="Наша группа в Вконтакте">
+              <span class="visually-hidden">Наша группа в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-youtube" href="https://www.youtube.com/@HTMLAcademyTV" target="_blank" rel="noopener noreferrer">Наш канал на YouTube</a>
+            <a class="social__link social__link-youtube" href="https://www.youtube.com/@HTMLAcademyTV" target="_blank" rel="noopener noreferrer" title="Наш канал на YouTube">
+              <span class="visually-hidden">Наш канал на YouTube</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link-telegram" href="https://htmlacademy.t.me" target="_blank" rel="noopener noreferrer">Наш канал в Telegram</a>
+            <a class="social__link social__link-telegram" href="https://htmlacademy.t.me" target="_blank" rel="noopener noreferrer" title="Наш канал в Telegram">
+              <span class="visually-hidden">Наш канал в Telegram</span>
+            </a>
           </li>
         </ul>
       </div>
