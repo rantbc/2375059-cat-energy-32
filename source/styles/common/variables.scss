@@ -1,12 +1,29 @@
 /* здесь используйте глобальные переменные */
 
-/* color palette */
-
-// gray
+// color palette
 $gray-dark: #444444;
-$gray-lighter: #ebebeb;
 $gray-light: #f2f2f2;
 
-// green
 $green-light: #68b738;
 $green-dark: #5eaa2f;
+
+
+// buttons
+$primary-btn-bg: $green-light;
+$primary-btn-bg--hover: $green-dark;
+$primary-btn-bg--active: $green-dark;
+
+$secondary-btn-bg: $gray-light;
+$secondary-btn-bg--hover: #ebebeb;
+$secondary-btn-bg--active: #ebebeb;
+
+
+// border
+$border-color: #cdcdcd;
+
+
+// input
+$input-border-color: #e7e7e7;
+$input-border-color--hover: $border-color;
+$input-border-color--focus: $gray-dark;
+$input-border-color--error: #ff8282;

@@ -1,10 +1,6 @@
 .product-preview {
   &__content {
-    background-image: linear-gradient(to bottom, #ffffff 81px, $gray-lighter 0);
-
-    @media (min-width: 768px) {
-      background-image: linear-gradient(to bottom, #ffffff 81px, $gray-lighter 0);
-    }
+    background-color: $gray-light;
   }
 
   &__title {
