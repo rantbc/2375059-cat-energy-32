@@ -1,0 +1,15 @@
+.section-address {
+  font-style: initial;
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: $heading-font;
+    color: #111111;
+  }
+
+  &__location {
+    line-height: 20px;
+    color: $gray-dark;
+  }
+}

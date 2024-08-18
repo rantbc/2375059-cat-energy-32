@@ -1,0 +1,18 @@
+.related-preview {
+  &__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $heading-font;
+    color: #222222;
+  }
+
+  &__bulk,
+  &__price {
+    line-height: 20px;
+    color: $gray-dark;
+  }
+}
+
+.related-products__offer {
+  line-height: 20px;
+}

@@ -1,5 +1,10 @@
 .footer {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $gray-light;
+}
+
+.copyright {
+  &__text {
+    line-height: 20px;
+    color: $gray-dark;
+  }
 }

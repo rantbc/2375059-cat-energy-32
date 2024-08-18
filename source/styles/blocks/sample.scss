@@ -1,0 +1,29 @@
+.sample-content {
+  &__description {
+    color: $gray-dark;
+  }
+}
+
+.sample-info {
+  &__progress {
+    font-size: 30px;
+    line-height: 37px;
+    font-family: $heading-font;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 14px;
+    color: $gray-dark;
+  }
+}
+
+.sample-total {
+  &__description,
+  &__sum {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+  }
+}

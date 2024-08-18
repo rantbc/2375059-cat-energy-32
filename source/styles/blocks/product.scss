@@ -1,3 +1,24 @@
-.product-preview__content {
-  background-color: cyan;
+.product-preview {
+  &__content {
+    background-color: $gray-light;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: $heading-font;
+    color: #222222;
+  }
+
+  &__caption {
+    line-height: 18px;
+    color: $gray-dark;
+  }
+}
+
+.product-properties {
+  &__name,
+  &__value {
+    line-height: 24px;
+    color: $gray-dark;
+  }
 }
