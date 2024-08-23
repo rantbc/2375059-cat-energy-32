@@ -1,4 +1,5 @@
 .button-primary {
+  line-height: 20px;
   color: #ffffff;
   background-color: $primary-btn-bg;
 
@@ -8,7 +9,8 @@
 }
 
 .button-secondary {
-  color: $gray-dark;
+  line-height: 20px;
+  color: $special-grey-darker;
   background-color: $secondary-btn-bg;
 
   &:hover {

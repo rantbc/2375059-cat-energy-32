@@ -1,0 +1,19 @@
+.copyright {
+  &__text {
+    line-height: 20px;
+    color: $special-grey-darker;
+  }
+
+  &__logo {
+    color: $special-grey;
+
+    &:hover {
+      color: $basic-green;
+    }
+
+    &:active {
+      color: $basic-green;
+      opacity: 0.3;
+    }
+  }
+}

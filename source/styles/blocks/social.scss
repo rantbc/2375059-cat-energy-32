@@ -1,0 +1,14 @@
+.social {
+  &__icon {
+    color: $special-grey;
+
+    &:hover {
+      color: $basic-green;
+    }
+
+    &:active {
+      color: $basic-green;
+      opacity: 0.7;
+    }
+  }
+}

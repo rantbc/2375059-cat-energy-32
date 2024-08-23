@@ -1,18 +1,35 @@
+.related-products {
+  &__title {
+    font-size: 24px;
+  }
+}
+
 .related-preview {
   &__title {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
     font-family: $heading-font;
-    color: #222222;
+    color: $special-grey-dark;
   }
 
   &__bulk,
   &__price {
-    line-height: 20px;
-    color: $gray-dark;
+    font-size: 14px;
+    line-height: 14px;
+    color: $special-grey-darker;
   }
 }
 
 .related-products__offer {
+  background-color: rgba(104, 183, 56, 0.85);
+  color: #ffffff;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon-gift");
+  }
 }

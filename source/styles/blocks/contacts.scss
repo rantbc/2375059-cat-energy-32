@@ -3,14 +3,14 @@
   background-color: #ffffff;
 
   &__title {
-    font-size: 20px;
-    line-height: 26px;
+    line-height: 20px;
     font-family: $heading-font;
     color: #111111;
   }
 
   &__location {
+    font-size: 14px;
     line-height: 20px;
-    color: $gray-dark;
+    color: $special-grey-darker;
   }
 }

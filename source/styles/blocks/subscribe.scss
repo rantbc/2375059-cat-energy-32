@@ -1,13 +1,21 @@
 .subscribe-section {
-  &__subtitle {
+  &__title {
     font-size: 24px;
-    line-height: 32px;
+    font-family: $heading-font;
+  }
+
+  &__subtitle {
+    font-size: 16px;
     font-family: $heading-font;
   }
 }
 
 .subscribe-form {
   &__input {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $heading-font;
+    text-transform: uppercase;
     border: 1px solid $input-border-color;
 
     &:hover {
@@ -17,5 +25,10 @@
     &:focus {
       border-color: $input-border-color--focus;
     }
+  }
+
+  &__button {
+    font-size: 20px;
+    line-height: 26px;
   }
 }

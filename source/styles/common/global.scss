@@ -36,7 +36,9 @@ body {
   cursor: pointer;
   border: none;
   color: inherit;
+
   font-family: $heading-font;
+  text-transform: uppercase;
 }
 
 .input-field,
@@ -78,14 +80,4 @@ body {
 
 .heading {
   font-family: $heading-font;
-}
-
-.heading-h2 {
-  font-size: 60px;
-  line-height: 60px;
-}
-
-.heading-line {
-  font-size: 40px;
-  line-height: 40px;
 }
