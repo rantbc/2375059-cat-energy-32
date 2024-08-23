@@ -1,5 +1,52 @@
 .stages-section {
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__item {
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+
+  &__item-healthy {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-leaf");
+      background-size: 30px 32px;
+    }
+  }
+
+  &__item-soluble {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-powder");
+      background-size: 26px 29px;
+    }
+  }
+
+  &__item-meal {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-meal");
+      background-size: 25px 30px;
+    }
+  }
+
+  &__item-changes {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-scales");
+      background-size: 26px 31px;
+    }
+  }
+
   &__description {
-    color: $gray-dark;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-grey-darker;
   }
 }

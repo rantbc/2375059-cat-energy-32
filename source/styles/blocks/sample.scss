@@ -1,29 +1,52 @@
+.sample-section {
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
 .sample-content {
   &__description {
-    color: $gray-dark;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-grey-darker;
   }
 }
 
 .sample-info {
   &__progress {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 24px;
     font-family: $heading-font;
   }
 
   &__caption {
-    font-size: 14px;
-    line-height: 14px;
-    color: $gray-dark;
+    font-size: 12px;
+    line-height: 12px;
+    color: $special-grey-darker;
   }
 }
 
 .sample-total {
   &__description,
   &__sum {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 20px;
     font-family: $heading-font;
     text-transform: uppercase;
+  }
+}
+
+.sample-slider {
+  &__curtain {
+    color: $special-grey;
+
+    &:hover {
+      color: $basic-green;
+    }
+
+    &:active {
+      color: $basic-green;
+      opacity: 0.6;
+    }
   }
 }
