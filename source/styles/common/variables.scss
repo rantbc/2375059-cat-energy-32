@@ -33,7 +33,13 @@ $status-error: #ff8282;
 $primary-btn-bg: $basic-green;
 $primary-btn-bg--hover: $basic-green-dark;
 $primary-btn-bg--active: $basic-green-dark;
+$primary-btn-bg: $basic-green;
+$primary-btn-bg--hover: $basic-green-dark;
+$primary-btn-bg--active: $basic-green-dark;
 
+$secondary-btn-bg: $basic-grey;
+$secondary-btn-bg--hover: $basic-grey-darker;
+$secondary-btn-bg--active: $basic-grey-darker;
 $secondary-btn-bg: $basic-grey;
 $secondary-btn-bg--hover: $basic-grey-darker;
 $secondary-btn-bg--active: $basic-grey-darker;
@@ -41,10 +47,14 @@ $secondary-btn-bg--active: $basic-grey-darker;
 
 // border
 $border-color: $basic-grey-dark;
+$border-color: $basic-grey-dark;
 
 
 // input
 $input-border-color: $basic-grey-darker-2;
+$input-border-color: $basic-grey-darker-2;
 $input-border-color--hover: $border-color;
+$input-border-color--focus: $special-grey-darker;
+$input-border-color--error: $status-error;
 $input-border-color--focus: $special-grey-darker;
 $input-border-color--error: $status-error;
