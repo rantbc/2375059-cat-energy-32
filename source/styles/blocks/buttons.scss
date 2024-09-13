@@ -1,6 +1,8 @@
-.button-primary {
+.button--primary {
+  font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  text-align: center;
+  color: $white;
   background-color: $primary-btn-bg;
 
   &:hover {
@@ -8,8 +10,10 @@
   }
 }
 
-.button-secondary {
+.button--secondary {
+  font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $special-grey-darker;
   background-color: $secondary-btn-bg;
 
