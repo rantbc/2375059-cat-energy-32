@@ -1,10 +1,57 @@
-.stages-section {
+.stages {
+  padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 45px;
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 20px 69px;
+    border-bottom: none;
+  }
+
   &__title {
+    margin: 0 0 40px;
     font-size: 36px;
     line-height: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 32px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, 249px);
+      gap: 37px 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 80px;
+    }
   }
 
   &__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px auto;
+    gap: 20px;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      padding: 40px 0 57px;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -14,39 +61,116 @@
       background-repeat: no-repeat;
       background-position: 50%;
     }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        margin: 0 0 31px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $heading-font;
+      color: $basic-grey;
+    }
   }
 
-  &__item-healthy {
+  &__item--healthy {
     &::before {
       background-image: url("../../icons/stack.svg#icon-leaf");
       background-size: 30px 32px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "1";
+        right: 25px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: 20px;
+      }
+    }
   }
 
-  &__item-soluble {
+  &__item--soluble {
     &::before {
       background-image: url("../../icons/stack.svg#icon-powder");
       background-size: 26px 29px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "2";
+        right: 3px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: 0;
+      }
+    }
   }
 
-  &__item-meal {
+  &__item--meal {
     &::before {
       background-image: url("../../icons/stack.svg#icon-meal");
       background-size: 25px 30px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "3";
+        right: 2px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: 0;
+      }
+    }
   }
 
-  &__item-changes {
+  &__item--changes {
     &::before {
       background-image: url("../../icons/stack.svg#icon-scales");
       background-size: 26px 31px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "4";
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: -4px;
+      }
+    }
   }
 
   &__description {
+    position: relative;
+    margin: 0;
     font-size: 14px;
     line-height: 18px;
     color: $special-grey-darker;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      font-size: inherit;
+      line-height: inherit;
+    }
   }
 }

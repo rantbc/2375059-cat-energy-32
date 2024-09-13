@@ -22,8 +22,17 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1220px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .button {
@@ -79,5 +88,6 @@ body {
 }
 
 .heading {
+  font-weight: 400;
   font-family: $heading-font;
 }
