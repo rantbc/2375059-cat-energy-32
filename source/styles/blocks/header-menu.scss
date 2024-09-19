@@ -1,34 +1,3 @@
-.header__nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border-top: 1px solid #e6e6e6;
-  background-color: $white;
-  z-index: 100;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: relative;
-    top: initial;
-    left: initial;
-    width: auto;
-    padding: 0 5px;
-    justify-self: end;
-    border-top: none;
-    background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}
-
-.header__nav.show {
-  display: block;
-}
-
 .header-menu {
   &__list {
     display: flex;
@@ -95,6 +64,12 @@
 .promo .header-menu__link {
   &--active {
     @media (min-width: $tablet-width) {
+      &::after {
+        border-bottom: 2px solid $basic-green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
       &::after {
         border-bottom: 2px solid $white;
       }

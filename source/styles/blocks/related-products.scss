@@ -29,7 +29,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: minmax(0, 1fr) 245px;
+      grid-template-columns: 1fr 245px;
       gap: 80px;
     }
   }

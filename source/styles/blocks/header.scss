@@ -63,4 +63,35 @@
   &__toggle.toggled {
     background-image: url("../../icons/stack.svg#icon-close");
   }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    background-color: $white;
+    z-index: 100;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: relative;
+      top: initial;
+      left: initial;
+      width: auto;
+      padding: 0 5px;
+      justify-self: end;
+      border-top: none;
+      background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &__nav.show {
+    display: block;
+  }
 }
