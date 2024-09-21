@@ -1,0 +1,46 @@
+.example-info {
+  &__wrapper {
+    display: grid;
+    grid-template-areas:
+      "weight days"
+      "total  total";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-areas: "weight days total";
+      grid-template-columns: repeat(2, 162px) 1fr;
+      gap: 43px;
+      margin: 0 0 105px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-areas:
+        "weight days"
+        "total  total";
+      grid-template-columns: repeat(2, 162px);
+      gap: 60px 42px;
+      margin: 0 0 75px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid $basic-grey-dark;
+    text-align: center;
+    border-radius: 3px;
+
+    &--weight {
+      grid-area: weight;
+    }
+
+    &--days {
+      grid-area: days;
+    }
+
+    &--total {
+      grid-area: total;
+    }
+  }
+}

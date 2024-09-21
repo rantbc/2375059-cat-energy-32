@@ -18,6 +18,14 @@
     }
   }
 
+  &__address--catalog {
+    background-color: $basic-grey;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
+  }
+
   iframe {
     width: 100%;
     height: 362px;
@@ -27,13 +35,5 @@
     @media (min-width: $tablet-width) {
       height: 400px;
     }
-  }
-}
-
-.catalog-content .contacts__address {
-  background-color: $basic-grey;
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
   }
 }

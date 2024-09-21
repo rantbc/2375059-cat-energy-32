@@ -5,7 +5,7 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
-      gap: 33px;
+      gap: 35px;
     }
   }
 
@@ -49,34 +49,14 @@
 
   &__link--active {
     @media (min-width: $tablet-width) {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        width: 100%;
-        border-bottom: 2px solid $basic-green;
-      }
-    }
-  }
-}
-
-.promo .header-menu__link {
-  &--active {
-    @media (min-width: $tablet-width) {
-      &::after {
-        border-bottom: 2px solid $basic-green;
-      }
+      text-decoration-line: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 13px;
+      text-decoration-color: $basic-green;
     }
 
     @media (min-width: $desktop-width) {
-      &::after {
-        border-bottom: 2px solid $white;
-      }
+      text-decoration-color: $basic-green;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $white;
   }
 }
