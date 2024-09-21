@@ -1,0 +1,46 @@
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    max-width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding: 12px 13px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    border: 1px solid $input-border-color;
+
+    &:hover {
+      border-color: $input-border-color--hover;
+    }
+
+    &:focus {
+      border-color: $input-border-color--focus;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: $input-border-color--error;
+    }
+  }
+
+  &__button {
+    padding: 15px 70px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

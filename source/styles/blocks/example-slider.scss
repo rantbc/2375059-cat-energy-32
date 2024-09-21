@@ -1,0 +1,98 @@
+.example-slider {
+  position: relative;
+  width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    margin: 0 auto 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -205px 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $special-grey;
+    border-radius: 2px;
+    z-index: 1;
+    height: 256px;
+    width: 4px;
+
+    @media (min-width: $tablet-width) {
+      height: 512px;
+    }
+  }
+
+  &:has(.example-slider__button:hover)::before {
+    background-color: $basic-green;
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    max-width: max-content;
+
+
+    &--leftShift {
+      left: 0;
+    }
+
+    &--rightShift {
+      right: 100%;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid $special-grey;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background-color: $special-grey;
+      mask-image: url("../../icons/double-triangle-arrow.svg");
+      mask-size: 24px 18px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      height: 18px;
+      width: 24px;
+    }
+
+    &:hover {
+      border-color: $basic-green;
+
+      &::after {
+        background-color: $basic-green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 43%;
+    }
+  }
+}

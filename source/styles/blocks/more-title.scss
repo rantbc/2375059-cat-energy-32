@@ -1,0 +1,41 @@
+.more-title {
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: $heading-font;
+  color: $special-grey-dark;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 24px;
+    background-image: url("../../icons/stack.svg#icon-plus");
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin: 0 0 21px;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px;
+    padding: 0 15px;
+
+    &::before {
+      margin: 0 auto 40px;
+    }
+  }
+}

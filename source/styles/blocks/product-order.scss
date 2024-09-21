@@ -1,0 +1,10 @@
+.product-order {
+  grid-area: order;
+
+  &__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+}

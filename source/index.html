@@ -30,13 +30,13 @@
       <button class="button header__toggle" id="nav-toggle" type="button" onclick="navToggle()">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header__nav header-menu" id="dropdown">
+      <nav class="header__nav header-menu header-promo-menu" id="dropdown">
         <ul class="list header-menu__list">
           <li class="header-menu__item">
             <a class="link header-menu__link header-menu__link--active" href="index.html">Главная</a>
           </li>
           <li class="header-menu__item">
-            <a class="link header-menu__link" href="catalog.html">Каталог продукции</a>
+            <a class="link header-menu__link " href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header-menu__item">
             <button class="button header-menu__link" type="button">Подбор программы</button>
@@ -52,9 +52,13 @@
       </div>
       <div class="promo__image">
         <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can@1x.png 1x, images/promo-can@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
-          <img src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов" title="Питание для котов">
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/promo-can@1x.webp 1x, images/promo-can@2x.webp 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/promo-can-tablet@1x.webp 1x, images/promo-can-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/promo-can-mobile@1x.webp, images/promo-can-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-can@1x.png 1x, images/promo-can@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
+          <img src="images/promo-can-mobile@1x.png" width="280" height="270" srcset="images/promo-can-mobile@2x.png 2x" alt="Питание для котов" title="Питание для котов">
         </picture>
       </div>
       <!-- блок скрываем на десктопе -->
@@ -152,14 +156,20 @@
           </div>
           <div class="example__slider example-slider">
             <picture class="example-slider__image-wrapper">
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before@1x.png, images/cat-before@2x.png 2x">
-              <img class="example-slider__image example-slider__image--leftShift" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до похудения" title="Кот до похудения">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/cat-before@1x.webp 1x, images/cat-before@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-before-mobile@1x.webp, images/cat-before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+              <img class="example-slider__image example-slider__image--leftShift" src="images/cat-before-mobile@1x.png" width="280" height="256" srcset="images/cat-before-mobile@2x.png 2x" alt="Кот до похудения" title="Кот до похудения">
             </picture>
             <picture class="example-slider__image-wrapper">
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png, images/after@2x.png 2x">
-              <img class="example-slider__image example-slider__image--rightShift" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после похудения" title="Кот после похудения">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/cat-after@1x.webp 1x, images/cat-after@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-after-mobile@1x.webp, images/cat-after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after@1x.png 1x, images/after@2x.png 2x">
+              <img class="example-slider__image example-slider__image--rightShift" src="images/cat-after-mobile@1x.png" width="280" height="256" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот после похудения" title="Кот после похудения">
             </picture>
-            <button class="example-slider__button" type="button">
+            <button class="example-slider__button example-slider-button" type="button">
               <span class="visually-hidden">Переключатель слайдов</span>
             </button>
           </div>
@@ -172,7 +182,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__address address container">
             <address class="address__wrapper">
-              <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="address__title">Приглашаем<br>к сотрудничеству дилеров!</p>
               <p class="address__location">ул. Большая Конюшенная, д. 19/8<br><span class="address__location-city">Санкт-Петербург</span></p>
             </address>
           </div>
