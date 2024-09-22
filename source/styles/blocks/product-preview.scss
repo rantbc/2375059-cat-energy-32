@@ -1,9 +1,11 @@
 .product-preview {
   position: relative;
-  padding: 22px 20px 24px;
+  padding: 22px 20px 23px;
+  border-bottom: 1px solid $basic-grey-darker;
 
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
