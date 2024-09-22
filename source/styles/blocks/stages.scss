@@ -173,4 +173,12 @@
       line-height: inherit;
     }
   }
+
+  &__description--break {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
