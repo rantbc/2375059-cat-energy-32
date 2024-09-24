@@ -1,0 +1,9 @@
+.stages-description {
+  &__break {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
