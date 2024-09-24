@@ -1,0 +1,96 @@
+.related-preview {
+  padding: 13px 0 20px;
+  border-bottom: 1px solid $basic-grey-dark;
+
+  &:first-child {
+    border-top: 1px solid $basic-grey-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 38px 28px;
+    border-right: 1px solid $basic-grey-dark;
+    border-left: 1px solid $basic-grey-dark;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
+    border-right: none;
+    border-left: none;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "bulk  price"
+      "offer offer";
+    row-gap: 13px;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      grid-template-areas:
+        "title bulk  price"
+        "offer offer offer";
+      grid-template-columns: 1fr 132px 93px;
+      row-gap: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-areas: "title bulk price offer";
+      grid-template-columns: 1fr 224px 61px 244px;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    color: $special-grey-dark;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__bulk {
+    grid-area: bulk;
+    font-size: 14px;
+    line-height: 14px;
+    color: $special-grey-darker;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      justify-self: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-self: start;
+    }
+  }
+
+  &__price {
+    grid-area: price;
+    font-size: 14px;
+    line-height: 14px;
+    color: $special-grey-darker;
+    justify-self: end;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-self: start;
+    }
+  }
+
+  &__controls {
+    grid-area: offer;
+  }
+}

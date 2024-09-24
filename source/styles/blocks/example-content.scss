@@ -1,0 +1,18 @@
+.example-content {
+  &__description {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-grey-darker;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 55px;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 4px 69px 0;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.product-properties {
+  grid-area: properties;
+  margin: 0 0 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 33px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 5px;
+      padding: 0 0 5px;
+      border-bottom: 1px solid $basic-grey-dark;
+    }
+
+    @media (min-width: $desktop-width) {
+      &:nth-child(2) {
+        margin: 0 0 4px;
+        padding: 0 0 8px;
+      }
+
+      &:last-child {
+        margin: 0;
+        padding: 0 0 10px;
+      }
+    }
+  }
+
+  &__name,
+  &__value {
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-grey-darker;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

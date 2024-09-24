@@ -1,0 +1,44 @@
+.related-products {
+  &__title {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 0 36px -20px;
+    padding: 0 40px 0 20px;
+    background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 80px;
+      padding: 0 40px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 79px -40px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $tablet-width) {
+      gap: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 245px;
+      gap: 80px;
+    }
+  }
+
+  &__list {
+    margin: 0 0 33px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+}

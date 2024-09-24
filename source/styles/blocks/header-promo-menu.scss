@@ -1,0 +1,13 @@
+.header-promo-menu {
+  .header-menu__link {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  .header-menu__link--active {
+    @media (min-width: $desktop-width) {
+      text-decoration-color: $white;
+    }
+  }
+}

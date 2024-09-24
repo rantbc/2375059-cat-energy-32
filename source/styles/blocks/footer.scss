@@ -1,0 +1,54 @@
+.footer {
+  background-color: $basic-grey;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 40px 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr auto 1fr;
+      padding: 55px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr auto 1fr;
+      padding: 66px 20px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    text-align: center;
+    color: #111111;
+    margin: 0 0 18px;
+    padding: 0 0 14px;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+    }
+
+    &:hover {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+    }
+
+    svg {
+      display: inline-block;
+    }
+
+    @media (min-width: $tablet-width) {
+      justify-self: start;
+      padding: 5px 0;
+    }
+  }
+}
