@@ -45,13 +45,22 @@
   }
 
   &__button {
+    display: none;
     padding: 14px 28px;
     font-size: 20px;
     line-height: 26px;
-    display: none;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    background-color: $primary-btn-bg;
 
     @media (min-width: $tablet-width) {
-      display: block;
+      display: inline-block;
+    }
+
+    &:hover {
+      background-color: $primary-btn-bg--hover;
     }
   }
 }
