@@ -1,9 +1,15 @@
 .button--primary {
+  border: none;
+  appearance: none;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $white;
+  font-family: $heading-font;
+  text-transform: uppercase;
   background-color: $primary-btn-bg;
+  border-radius: 0;
+  cursor: pointer;
 
   &:hover {
     background-color: $primary-btn-bg--hover;
@@ -11,11 +17,17 @@
 }
 
 .button--secondary {
+  border: none;
+  appearance: none;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $special-grey-darker;
+  font-family: $heading-font;
+  text-transform: uppercase;
   background-color: $secondary-btn-bg;
+  border-radius: 0;
+  cursor: pointer;
 
   &:hover {
     background-color: $secondary-btn-bg--hover;
