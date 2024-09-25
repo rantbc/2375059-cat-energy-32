@@ -6,10 +6,10 @@
       url("../../images/map-img-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/map-img-mobile@1x.jpg") type("image/jpg") 1x,
       url("../../images/map-img-mobile@2x.jpg") type("image/jpg") 2x
-      background-position: 50% 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
     );
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-image:
