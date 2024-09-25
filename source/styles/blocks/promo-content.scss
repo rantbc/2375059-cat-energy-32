@@ -1,32 +1,64 @@
 .promo-content {
+  display: grid;
+  grid-template-areas:
+    "promo-title"
+    "promo-subtitle"
+    "promo-image"
+    "promo-button";
+  grid-template-columns: 1fr;
+  align-items: start;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "promo-title"
+      "promo-subtitle"
+      "promo-button"
+      "promo-image";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "promo-title    promo-image"
+      "promo-subtitle promo-image"
+      "promo-button   promo-image";
+    grid-template-columns: 514px 552px;
+  }
   padding: 0;
   z-index: 1;
   text-align: center;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 120px;
+    padding: 0 30px;
     text-align: left;
     color: inherit;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 -6px;
     padding: 81px 0 0 100px;
   }
 
   &__title {
+    grid-area: promo-title;
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 25px;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 40px;
+      padding: 0 90px;
       font-size: 60px;
       line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 
   &__subtitle {
+    grid-area: promo-subtitle;
     margin: 0 0 29px;
     font-size: 14px;
     line-height: 14px;
@@ -35,32 +67,45 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 0 50px;
+      padding: 0 90px;
       font-size: 20px;
       line-height: 20px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 52px;
+      padding: 0;
+      margin: -88px 0 52px;
     }
   }
 
   &__button {
-    display: none;
-    padding: 14px 28px;
-    font-size: 20px;
-    line-height: 26px;
-    font-family: $heading-font;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white;
-    background-color: $primary-btn-bg;
+    grid-area: promo-button;
+    padding: 10px 0;
 
     @media (min-width: $tablet-width) {
-      display: inline-block;
+      padding: 14px 28px;
+      font-size: 20px;
+      line-height: 26px;
+      justify-self: left;
+      margin: 0 0 0 90px;
+      z-index: 1;
     }
 
-    &:hover {
-      background-color: $primary-btn-bg--hover;
+    @media (min-width: $desktop-width) {
+      margin: -104px 0 0;
+    }
+  }
+
+  &__image {
+    grid-area: promo-image;
+    margin: 0 0 -3px;
+
+    @media (min-width: $tablet-width) {
+      margin: -81px auto -7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: -81px 0 0 -147px;
     }
   }
 }
