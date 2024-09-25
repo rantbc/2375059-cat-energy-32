@@ -1,15 +1,23 @@
-.button--primary {
-  border: none;
+.button {
   appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font-family: $heading-font;
+  text-transform: uppercase;
+}
+
+.button--primary {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $white;
-  font-family: $heading-font;
-  text-transform: uppercase;
   background-color: $primary-btn-bg;
-  border-radius: 0;
-  cursor: pointer;
 
   &:hover {
     background-color: $primary-btn-bg--hover;
@@ -17,17 +25,11 @@
 }
 
 .button--secondary {
-  border: none;
-  appearance: none;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $special-grey-darker;
-  font-family: $heading-font;
-  text-transform: uppercase;
   background-color: $secondary-btn-bg;
-  border-radius: 0;
-  cursor: pointer;
 
   &:hover {
     background-color: $secondary-btn-bg--hover;
