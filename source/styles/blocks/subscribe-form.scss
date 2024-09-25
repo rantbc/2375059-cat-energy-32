@@ -17,6 +17,12 @@
   }
 
   &__input {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    appearance: textfield;
     flex-grow: 1;
     padding: 12px 13px;
     font-size: 20px;
@@ -30,6 +36,7 @@
     }
 
     &:focus {
+      outline: none;
       border-color: $input-border-color--focus;
     }
 
@@ -44,3 +51,4 @@
     line-height: 26px;
   }
 }
+
