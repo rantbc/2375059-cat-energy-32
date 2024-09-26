@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header promo">
+  <header class="header header--nojs promo">
     <div class="header__wrapper container">
       <a class="header__logo" href="index.html">
         <picture>
@@ -243,9 +243,9 @@
 
   <script>
     window.onload = () => {
-      if (document.querySelector('.header__nav--nojs, .header__toggle--nojs')) {
-        const noJsElements = document.querySelectorAll('.header__nav--nojs, .header__toggle--nojs');
-        noJsElements.forEach((el) => el.classList.remove('header__nav--nojs', 'header__toggle--nojs'))
+      if (document.querySelector('.header--nojs, .header__nav--nojs, .header__toggle--nojs')) {
+        const noJsElements = document.querySelectorAll('.header--nojs, .header__nav--nojs, .header__toggle--nojs');
+        noJsElements.forEach((el) => el.classList.remove('header--nojs', 'header__nav--nojs', 'header__toggle--nojs'))
       }
     };
     function navToggle() {
