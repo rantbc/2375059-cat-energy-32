@@ -27,10 +27,10 @@
       <a class="header__company" href="index.html">
         <img src="images/logo-caption.svg" width="101" height="20" alt="Cat Energy" title="Cat Energy">
       </a>
-      <button class="button header__toggle" id="nav-toggle" type="button" onclick="navToggle()">
+      <button class="button header__toggle header__toggle--nojs" id="nav-toggle" type="button" onclick="navToggle()">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header__nav header-menu header-promo-menu" id="dropdown">
+      <nav class="header__nav header__nav--nojs header-menu header-promo-menu" id="dropdown">
         <ul class="list header-menu__list">
           <li class="header-menu__item">
             <a class="link header-menu__link header-menu__link--active" href="index.html">Главная</a>
@@ -242,6 +242,12 @@
   </footer>
 
   <script>
+    window.onload = () => {
+      if (document.querySelector('.header__nav--nojs, .header__toggle--nojs')) {
+        const noJsElements = document.querySelectorAll('.header__nav--nojs, .header__toggle--nojs');
+        noJsElements.forEach((el) => el.classList.remove('header__nav--nojs', 'header__toggle--nojs'))
+      }
+    };
     function navToggle() {
       document.getElementById("nav-toggle").classList.toggle("toggled");
       document.getElementById("dropdown").classList.toggle("show");

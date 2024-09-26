@@ -59,6 +59,10 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+
+    &--nojs {
+      display: none;
+    }
   }
 
   &__toggle.toggled {
@@ -89,6 +93,10 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
+    }
+
+    &--nojs {
+      display: block;
     }
   }
 
