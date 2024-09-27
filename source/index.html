@@ -9,6 +9,8 @@
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -30,7 +32,7 @@
       <button class="button header__toggle header__toggle--nojs" id="nav-toggle" type="button" onclick="navToggle()">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="header__nav header__nav--nojs header-menu header-promo-menu" id="dropdown">
+      <nav class="header__nav header__nav--nojs header-menu header-menu--promo" id="dropdown">
         <ul class="header-menu__list">
           <li class="header-menu__item">
             <a class="header-menu__link header-menu__link--active" href="index.html">Главная</a>

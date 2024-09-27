@@ -64,4 +64,16 @@
       text-decoration-color: $basic-green;
     }
   }
+
+  &--promo &__link {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--promo &__link--active {
+    @media (min-width: $desktop-width) {
+      text-decoration-color: $white;
+    }
+  }
 }
