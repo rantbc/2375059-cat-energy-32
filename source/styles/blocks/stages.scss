@@ -14,6 +14,8 @@
   }
 
   &__title {
+    font-weight: 400;
+    font-family: $heading-font;
     margin: 0 0 40px;
     font-size: 36px;
     line-height: 40px;
@@ -26,6 +28,9 @@
   }
 
   &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;

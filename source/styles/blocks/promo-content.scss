@@ -40,6 +40,8 @@
   }
 
   &__title {
+    font-weight: 400;
+    font-family: $heading-font;
     grid-area: promo-title;
     font-size: 36px;
     line-height: 36px;

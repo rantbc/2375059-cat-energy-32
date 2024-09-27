@@ -1,5 +1,7 @@
 .related-products {
   &__title {
+    font-weight: 400;
+    font-family: $heading-font;
     display: inline-block;
     font-size: 24px;
     margin: 0 0 36px -20px;
@@ -35,6 +37,8 @@
   }
 
   &__list {
+    padding: 0;
+    list-style: none;
     margin: 0 0 33px;
 
     @media (min-width: $tablet-width) {

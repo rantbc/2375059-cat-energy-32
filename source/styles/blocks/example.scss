@@ -2,6 +2,8 @@
   position: relative;
 
   &__title {
+    font-weight: 400;
+    font-family: $heading-font;
     margin: 0 0 40px;
     padding: 25px 0 0;
     font-size: 36px;
