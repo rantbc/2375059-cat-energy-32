@@ -152,10 +152,10 @@
     &::after {
       content: "";
       display: inline-block;
-      margin: 0 0 2px 16px;
-      width: 24px;
-      height: 12px;
-      background-image: url("../../icons/stack.svg#icon-arrow-right");
+      margin: 0 0 2px 25px;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../icons/stack.svg#icon-arrow-short");
     }
 
     @media (min-width: $tablet-width) {
@@ -167,10 +167,7 @@
 
     &:hover {
       &::after {
-        margin: 0 0 3px 26px;
-        width: 32px;
-        height: 10px;
-        background-image: url("../../icons/stack.svg#icon-arrow-right-hovered");
+        background-image: url("../../icons/stack.svg#icon-arrow-long");
       }
     }
 
