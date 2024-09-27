@@ -82,4 +82,12 @@
       margin: 0 0 0 -163px;
     }
   }
+
+  &--nojs::before {
+    top: 202px;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
 }

@@ -3,9 +3,9 @@
 
   &__wrapper {
     position: relative;
-    min-height: 65px;
+    padding: 0;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 70px 1fr 70px;
     align-items: center;
     background-color: $white;
     border-bottom: 1px solid #e6e6e6;
@@ -23,6 +23,12 @@
   }
 
   &__logo {
+    padding: 13px  0 13px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+
     img {
       display: block;
     }
@@ -38,7 +44,6 @@
 
   &__company {
     justify-self: center;
-    padding: 5px 0 0;
 
     img {
       display: block;
@@ -50,6 +55,7 @@
   }
 
   &__toggle {
+    margin: 0 20px 0 0;
     width: 24px;
     height: 18px;
     justify-self: flex-end;
@@ -94,9 +100,17 @@
     @media (min-width: $desktop-width) {
       padding: 0;
     }
+  }
 
-    &--nojs {
-      display: block;
+  &__nav--nojs {
+    display: block;
+    margin-bottom: -1px;
+    position: relative;
+    top: 0;
+    grid-column: 1/-1;
+
+    @media (min-width: $tablet-width) {
+      grid-column: auto;
     }
   }
 

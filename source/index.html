@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header header--nojs promo">
+  <header class="header promo promo--nojs">
     <div class="header__wrapper container">
       <a class="header__logo" href="index.html">
         <picture>
@@ -175,7 +175,7 @@
       </div>
     </section>
     <section class="contacts-section">
-      <div class="contacts">
+      <div class="contacts contacts--nojs">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__wrapper">
           <div class="contacts__address address container">
@@ -243,9 +243,9 @@
 
   <script>
     window.onload = () => {
-      if (document.querySelector('.header--nojs, .header__nav--nojs, .header__toggle--nojs')) {
-        const noJsElements = document.querySelectorAll('.header--nojs, .header__nav--nojs, .header__toggle--nojs');
-        noJsElements.forEach((el) => el.classList.remove('header--nojs', 'header__nav--nojs', 'header__toggle--nojs'))
+      if (document.querySelector('.header__nav--nojs, .header__toggle--nojs, .contacts--nojs')) {
+        const noJsElements = document.querySelectorAll('.header__nav--nojs, .header__toggle--nojs, .contacts--nojs');
+        noJsElements.forEach((el) => el.classList.remove('header__nav--nojs', 'header__toggle--nojs', 'contacts--nojs'))
       }
     };
     function navToggle() {
